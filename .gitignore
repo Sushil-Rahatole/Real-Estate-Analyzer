@@ -1,0 +1,40 @@
+# Root-level ignores
+*.log
+*.sqlite3
+*.pyc
+__pycache__/
+.env
+
+# ====================================
+# FRONTEND (React / JavaScript)
+# ====================================
+frontend/node_modules/
+frontend/.env
+frontend/.next/
+frontend/dist/
+frontend/build/
+
+# ====================================
+# PYTHON & DJANGO
+# ====================================
+backend/venv/
+backend/env/
+backend/.env
+backend/__pycache__/
+backend/*.sqlite3
+backend/staticfiles/
+backend/media/
+
+# Django specific
+**/migrations/** 
+!**/migrations/__init__.py
+
+# Python
+*.py[cod]
+*$py.class
+
+# Virtual environments (global)
+venv/
+env/
+ENV/
+.venv/

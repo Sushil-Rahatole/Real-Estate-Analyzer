@@ -71,7 +71,7 @@ const prepareComparisonChartData = (data, areas) => {
   }]);
 
   try {
-    const res = await fetch("http://127.0.0.1:8000/api/analyze/", {
+    const res = await fetch("https://real-estate-analyzer-9ir8.onrender.com/api/analyze/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query }),

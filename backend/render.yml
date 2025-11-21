@@ -2,5 +2,7 @@ services:
   - type: web
     name: django-backend
     env: python
+    rootDir: ./backend
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn real_estate_project.wsgi:application"
+    pythonVersion: 3.11.9
